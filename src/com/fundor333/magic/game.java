@@ -11,13 +11,8 @@
  * File Updated 10/2/2016
  */
 
-package com.fundor333.magic.player;
+package com.fundor333.magic;
 
+public class Game{
 
-public class Player {
-    private String name;
-    private int lifepoint;
-    private PlayerBoard playerBoard;
-    private Hand hand;
-    private Deck deck;
 }

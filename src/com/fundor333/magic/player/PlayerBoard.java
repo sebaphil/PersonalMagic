@@ -1,9 +1,9 @@
 /*
  * Copyright (c)
  * This code was created by Fundor333. It's distributed as
- * part of the Magic.
+ * part of the PersonalMagic.
  *
- * Magic is Open Source and distributed under the
+ * PersonalMagic is Open Source and distributed under the
  * GNU General Public License, version 2
  *
  * https://www.gnu.org/licenses/gpl-2.0.html

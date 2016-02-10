@@ -11,13 +11,13 @@
  * File Updated 10/2/2016
  */
 
-package com.fundor333.magic.player;
+package com.fundor333.magic.global;
 
+import com.fundor333.magic.player.Player;
 
-public class Player {
-    private String name;
-    private int lifepoint;
-    private PlayerBoard playerBoard;
-    private Hand hand;
-    private Deck deck;
+public class Match {
+    private Status status;
+    private Player player1;
+    private Player player2;
+    private Pile pile;
 }
