@@ -13,6 +13,8 @@
 
 package com.fundor333.magic.card;
 
+import com.fundor333.magic.exception.DestroyCard;
+
 import java.io.Serializable;
 
 public abstract class Card implements Serializable {
@@ -22,7 +24,9 @@ public abstract class Card implements Serializable {
         this.name = n;
     }
 
-    public abstract void destroy();
+    public void destroy() throws DestroyCard {
+        throw new DestroyCard(this);
+    }
 
     public String getName() {
         return this.name;

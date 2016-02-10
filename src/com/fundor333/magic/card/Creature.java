@@ -13,6 +13,8 @@
 
 package com.fundor333.magic.card;
 
+import com.fundor333.magic.exception.CreatureDeath;
+
 public class Creature extends Card {
     private int defence;
     private int attack;
@@ -23,20 +25,30 @@ public class Creature extends Card {
         this.attack = attack;
     }
 
-    public void battle(Creature c) {
-
+    public static void battle(Creature c1, Creature c2) throws CreatureDeath {
+        c1.getDamage(c2.getAttack());
+        c2.getDamage(c1.getAttack());
     }
 
-    public void getDamage(int damage) {
+    void getDamage(int damage) throws CreatureDeath {
+        if (damage >= this.defence)
+            this.destroy();
     }
 
     @Override
-    public void destroy() {
-
+    public void destroy() throws CreatureDeath {
+        throw new CreatureDeath(this);
     }
 
     @Override
     public void effect() {
+    }
 
+    public int getDefence() {
+        return defence;
+    }
+
+    public int getAttack() {
+        return attack;
     }
 }

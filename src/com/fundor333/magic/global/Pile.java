@@ -11,16 +11,7 @@
  * File Updated 10/2/2016
  */
 
-package com.fundor333.magic.card;
+package com.fundor333.magic.global;
 
-public class Instant extends Card {
-    public Instant(String n) {
-        super(n);
-    }
-
-
-    @Override
-    public void effect() {
-
-    }
+public class Pile {
 }

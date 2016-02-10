@@ -11,16 +11,13 @@
  * File Updated 10/2/2016
  */
 
-package com.fundor333.magic.card;
+package com.fundor333.magic.global;
 
-public class Instant extends Card {
-    public Instant(String n) {
-        super(n);
-    }
+import com.fundor333.magic.player.Player;
 
-
-    @Override
-    public void effect() {
-
-    }
+public class Game {
+    private Status status;
+    private Player player1;
+    private Player player2;
+    private Pile pile;
 }

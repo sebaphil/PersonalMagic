@@ -14,9 +14,8 @@
 package com.fundor333.magic.card;
 
 public class Sourcery extends Card {
-    @Override
-    public void destroy() {
-
+    public Sourcery(String n) {
+        super(n);
     }
 
     @Override

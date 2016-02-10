@@ -13,17 +13,16 @@
 
 package com.fundor333.magic.exception;
 
-import com.fundor333.magic.card.Creature;
+import com.fundor333.magic.player.Player;
 
-public class CreatureDeath extends DestroyCard {
-    private Creature c;
+public class ZeroLifePoint extends Exception {
+    private Player player;
 
-    public CreatureDeath(Creature c) {
-        super(c);
-        this.c = c;
+    public ZeroLifePoint(Player player) {
+        this.player = player;
     }
 
-    public Creature getCreature() {
-        return c;
+    public Player getPlayer() {
+        return player;
     }
 }

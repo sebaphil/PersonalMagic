@@ -11,16 +11,18 @@
  * File Updated 10/2/2016
  */
 
-package com.fundor333.magic.card;
+package com.fundor333.magic.exception;
 
-public class Instant extends Card {
-    public Instant(String n) {
-        super(n);
+import com.fundor333.magic.card.Card;
+
+public class DestroyCard extends Exception {
+    private Card c;
+
+    public DestroyCard(Card c) {
+        this.c = c;
     }
 
-
-    @Override
-    public void effect() {
-
+    public Card getCard() {
+        return c;
     }
 }

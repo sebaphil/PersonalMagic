@@ -15,4 +15,9 @@ package com.fundor333.magic.player;
 
 
 public class Player {
+    private String name;
+    private int lifepoint;
+    private PlayerBoard playerBoard;
+    private Hand hand;
+    private Deck deck;
 }
